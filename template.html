@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title or "Home" }}</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body class="dark">
+    <div id="wrapper">
+        <div id="containers">
+            {% for folder in folders %}
+            <div class="container {{ random_class() }}">
+                <header>{{ folder.name.upper() }}</header>
+                {% for bookmark in folder.bookmarks %}
+                <div class="link">
+                    {% if bookmark.title %}
+                    <p>{{ bookmark.title }}</p>
+                    {% endif %}
+                    <a href="{{ bookmark.url }}">
+                        <img src="{{ bookmark.faviconurl() }}" alt="&#8195;" class="icon">
+                        {{ bookmark.url }}
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

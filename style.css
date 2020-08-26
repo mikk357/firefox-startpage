@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --bg-dark: #22272a;
+    --bg-dark2: #2c3134;
+    --fg-dark: #f2f2f4;
+    --fg-light: #6f798c;
+    --green: #2CC46E;
+    --blue: #6f97ec;
+    --red: #ef4b4b;
+    --yellow: #ECC46F;
+    --link-hover-timing: all 0.25s ease-in-out;
+    --fonts: 'JetBrains Mono', Helvetica, sans-serif;
+}
+
+.dark {
+    background-color: var(--bg-dark);
+    color: var(--fg-dark);
+
+}
+
+.dark a, .dark a:visited {
+    color: var(--fg-dark);
+}
+
+.dark .container {
+    background-color: var(--bg-dark2);
+}
+
+body {
+    font-family: var(--fonts);
+    transition: all 0.5s ease
+}
+
+#containers {
+    width: 90%;
+    margin: 6em auto;
+    column-count: 3;
+    column-gap: 5%;
+    column-width: 30%;
+}
+
+.container {
+    display: inline-block;
+    padding: 1em;
+    margin: 1em 0;
+    /* ^ optional: to make cards separated */
+    width: 100%;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #556065;
+}
+
+.link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+header {
+    padding-bottom: 8px;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.social a:hover, .social header {
+    color: var(--red);
+}
+
+.dev a:hover, .dev header {
+    color: var(--yellow);
+}
+
+.other a:hover, .other header {
+    color: var(--blue);
+}

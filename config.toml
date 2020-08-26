@@ -1,0 +1,12 @@
+title = "• Home •"
+# title of homepage
+
+profile = "%APPDATA%\\Mozilla\\Firefox\\Profiles\\ety1761x.default-release-1"
+# profile folder
+
+bookmarks = "startpage"
+# folder with categories
+# %folder%/
+#        dev/*
+#        social/*
+#        news/*
