@@ -4,7 +4,7 @@ title = "• Home •"
 profile = "%APPDATA%\\Mozilla\\Firefox\\Profiles\\ety1761x.default-release-1"
 # profile folder
 
-bookmarks = "startpage"
+bookmarks = "/"
 # folder with categories
 # %folder%/
 #        dev/*

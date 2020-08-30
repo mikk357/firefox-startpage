@@ -13,6 +13,7 @@
                 <header>{{ folder.name.upper() }}</header>
                 {% for bookmark in folder.bookmarks %}
                 <div class="link">
+                    <hr>
                     {% if bookmark.title %}
                     <p>{{ bookmark.title }}</p>
                     {% endif %}
