@@ -13,7 +13,7 @@
     --red: #ef4b4b;
     --yellow: #ECC46F;
     --link-hover-timing: all 0.25s ease-in-out;
-    --fonts: 'JetBrains Mono', Helvetica, sans-serif;
+    --fonts: 'JetBrains Mono', 'Fira Code', Helvetica, sans-serif;
 }
 
 .dark {
