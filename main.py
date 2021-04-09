@@ -3,6 +3,7 @@ import os
 import random
 import sqlite3
 from urllib.parse import urlsplit
+from typing import List
 
 import jinja2
 import toml
@@ -21,7 +22,7 @@ class Bookmark:
 @dataclasses.dataclass
 class BookmarksFolder:
     name: str
-    bookmarks: list
+    bookmarks: List[Bookmark]
 
 
 # TODO: more classes with colors

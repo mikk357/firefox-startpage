@@ -19,7 +19,7 @@
                     {% endif %}
                     <a href="{{ bookmark.url }}">
                         <img src="{{ bookmark.faviconurl() }}" alt="&#8195;" class="icon">
-                        {{ bookmark.url }}
+                        {{ bookmark.url.replace("https://", "") }}
                     </a>
                 </div>
                 {% endfor %}
